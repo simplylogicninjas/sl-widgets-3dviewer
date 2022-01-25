@@ -4,7 +4,7 @@ This widget can be used to view 3d models in .xkt-format.
 
 ## 1. Description
 
-This widget can be used to view 3d models in .xkt-format. It comes bundled with optional component widgets which make this widget highly customizable. The widget components allows manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring parts. To use this widget in a deployed environment you will need to aquire an API-key through ..... or run it locally. The widget can be used in material passports, building guidance applications, product designing applications or used for marketing in architectual applications.
+This widget can be used to view 3d models in .xkt-format. It comes bundled with optional component widgets which make this widget highly customizable. The widget components allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring parts. To use this widget in a deployed environment you will need to aquire an API-key through ..... or run it locally. The widget can be used in material passports, building guidance applications, product designing applications or used for marketing in architectual applications.
 
 ### 1.1 Contents
 <table><tbody><tr><td>Widget component</td><td>Description</td></tr>
@@ -37,7 +37,9 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 ### 2.1 Modeler example
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_modeler_example.png" width="600"/>
+
 * The viewer needs to be nested inside the viewer container.
+* The viewer requires a dataview object from the pagecontext.
 
 
 ### 2.2 Configuration example
@@ -82,7 +84,7 @@ A navigation cube which can be interacted with by dragging which allows for rota
 * Place the Navigation Cube inside the Viewer Container
 * You can specify the colors of the cube by using hexadecimal colornotation.
 
-#### 4.2 Annotations
+### 4.2 Annotations
 #### 4.2.1 Description
 A widget which allows you to show annotations or markers on a model. To accopmlish this you will need a list of model objects.
 The model objects will need an ObjectID
@@ -101,7 +103,7 @@ The model objects will need an ObjectID
 * Specify the data source that returns the model objects that you want to show in the annotation
 * You can specify when the label is shown.
 
-#### 4.3 Xray-Objects
+### 4.3 Xray-Objects
 #### 4.3.1 Description
 This widget allows you to toggle parts of the 3D-model transparent which allows you to see the objects behind.
 #### 4.3.2 Browser example
@@ -128,7 +130,7 @@ This widget allows you to toggle parts of the 3D-model transparent which allows 
 
 * This tab allows you to customize the UI component shown to the user
 
-#### 4.4 Measurement
+### 4.4 Measurement
 #### 4.4.1 Description
 This widget allows you to measure parts of the 3D-model. It allows you to measure lengths and angles. Uses Metric system.
 #### 4.4.2 Browser example
@@ -150,7 +152,7 @@ This widget allows you to measure parts of the 3D-model. It allows you to measur
 
 * This specifies the labels for the UI component that is shown to the user.
 
-#### 4.5 Camera Navigation
+### 4.5 Camera Navigation
 #### 4.5.1 Description
 Allows you to influence how the user interacts with the camera of the viewer
 #### 4.5.2 Browser example
@@ -162,18 +164,19 @@ Allows you to influence how the user interacts with the camera of the viewer
 
 #### 4.5.4 Configuration example
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-navigation/cameranavigation_general_tab.png" width="600"/>
+
 * Place the Camera Navigation inside the Viewer Container
 * Allows you to configure the navigation mode of the camera.
 * This specifies how the camera navigation is shown to the user.
 
-#### 4.6 Camera Position
+### 4.6 Camera Position
 #### 4.6.1 Description
 Allows you to save the camera position
 #### 4.6.2 Browser example
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-position/cameraposition_ui_example.png" width="300"/>
 
 #### 4.6.3 Modeler example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-posistion/cameraposition_modeler_example.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-position/cameraposition_modeler_example.png" width="600"/>
 
 
 #### 4.6.4 Configuration example
@@ -184,7 +187,7 @@ Allows you to save the camera position
 * Read the positions from the strings provided
 - position is a string formatted as: ```int;int;int ```
 
-#### 4.7 Reset Viewer
+### 4.7 Reset Viewer
 #### 4.7.1 Description
 Used reset the viewer to how it was initialized on page load
 #### 4.7.2 Browser example
@@ -199,7 +202,7 @@ Used reset the viewer to how it was initialized on page load
 * Place the Reset Viewer inside the Viewer Container
 * Customize the label according to your preferences
 
-#### 4.8 Treeview Hierarchy
+### 4.8 Treeview Hierarchy
 #### 4.8.1 Description
 Used to display a treeview hierarchy which indicates how the treeview component is displayed
 #### 4.8.2 Browser example
@@ -217,7 +220,7 @@ Used to display a treeview hierarchy which indicates how the treeview component 
 * Place the Treeview inside the Viewer Container
 * Customize how the treeview hierarchy is viewed and what the default display mode for the treeview will be.
 
-#### 4.9 Treeview
+### 4.9 Treeview
 #### 4.9.1 Description
 Used to display a treeview of objects/types/storey's depending on how the Treeview Hierarchy is configured. Gives the user an overview of the available objects/types/storey's. Allows you to toggle objects as visible/invisible in the 3D-Model.
 #### 4.9.2 Browser example
@@ -234,7 +237,7 @@ Used to display a treeview of objects/types/storey's depending on how the Treevi
 * Place the Treeview inside the Viewer Container
 * Customize the behaviour of clicking on an item in the treeview.
 
-#### 4.10 Highlight Objects
+### 4.10 Highlight Objects
 #### 4.10.1 Description
 Used to highlight objects in the 3D-model when selecting through hovering/clicking
 #### 4.10.2 Browser example
