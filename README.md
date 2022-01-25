@@ -8,7 +8,8 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 
 ### 1.1 Contents
 <table><tbody><tr><td>Widget component</td><td>Description</td></tr>
-<tr><td>[Viewer Container](http://www.google.com)</td><td>The container widget where every other widget should be placed within which is mandatory</td></tr>
+<tr><td>
+ <a href="https://www.google.com">Viewer container</a></td><td>The container widget where every other widget should be placed within which is mandatory</td></tr>
 <tr><td>[Viewer](http://www.google.com)</td><td>The widget which holds the reference to the object that represents the 3D-model.</td></tr>
 <tr><td>[Navigation Cube](http://www.google.com)</td><td>A navigation cube which can be interacted with by dragging which allows for rotation of the 3D-model and snapping</td></tr>
 <tr><td>[Annotation Widget](http://www.google.com)</td><td>A widget which allows you to show annotations</td></tr>
@@ -23,7 +24,7 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 </tbody></table>
 
 ### 1.2 Browser example
-<table><tbody><tr><td>Example 1</td><td>Example 2</td><td>Example 3</td></tr><tr><td><img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-viewer/main/docs/viewer/images/viewer_browser_example.png" width="300"></td><td><img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-viewer/main/docs/viewer/images/viewer_browser_example2.png" width="300"></td><td><img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-viewer/main/docs/viewer/images/viewer_browser_example3.png" width="300"></td></tr></tbody></table>
+<table><tbody><tr><td>Example 1</td><td>Example 2</td><td>Example 3</td></tr><tr><td><img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_browser_example.png" width="300"></td><td><img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_browser_example2.png" width="300"></td><td><img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_browser_example3.png" width="300"></td></tr></tbody></table>
 
 ## 2. Usage
 
