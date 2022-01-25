@@ -30,23 +30,30 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 * Place a viewer container in a dataview that contains a 3D-model
 * Add the API-key aquired from .... . If you want to test a 3d model locally you don't need an API-key.
 * Place the viewer widget inside the viewer container.
+* Select an entity that holds the XKT-model file. 
 
 ### 2.1 Modeler example
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widget-popover/main/docs/images/modeler_example.png" width="600"/>
-
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-viewer/main/docs/viewer/images/viewer_modeler_example.png" width="600"/>
 
 
 ### 2.2 Configuration example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widget-popover/main/docs/images/popover_general_tab.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-viewer/main/docs/viewer-container/images/viewercontainer_general_tab.png" width="600"/>
+
+Configure the API-key, if the API-key field is empty the widget will work locally.
+
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-viewer/main/docs/viewer/images/viewer_general_tab.png" width="600"/>
 
 ## 3. Use Cases
 
-* This can be used to create a context menu on a page.
-* This can be used with or without context.
+* Material passports
+* Product design
+* Construction guidance
+* Inspection and planning applications
+* Marketing in architectual applications
 
 ## 4. Widget Components
-
+All widget components are optional but require the viewer container widget and the viewer widget to work.
 ### 4.1 Navigation Cube
 #### 4.1.1 Description
 A navigation cube which can be interacted with by dragging which allows for rotation of the 3D-model and snapping
