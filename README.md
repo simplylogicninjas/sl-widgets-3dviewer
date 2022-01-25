@@ -7,7 +7,7 @@ This widget can be used to view 3d models in .xkt-format.
 This widget can be used to view 3d models in .xkt-format. It comes bundled with optional component widgets which make this widget highly customizable. The widget components allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring parts. To use this widget in a deployed environment you will need to aquire an API-key through ..... or run it locally. The widget can be used in material passports, building guidance applications, product designing applications or used for marketing in architectual applications.
 
 ### 1.1 Contents
-<table><tbody><tr><td>Widget component</td><td>Description</td></tr>
+<table><tbody><tr><td><b>Widget component</td><td>Description</b></td></tr>
 <tr><td>
  <a href="12-Browser-example">Viewer container</a></td><td>The container widget where every other widget should be placed within which is mandatory</td></tr>
 <tr><td><a href="12-Browser-example">Viewer</a></td><td>The widget which holds the reference to the object that represents the 3D-model.</td></tr>
