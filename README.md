@@ -4,18 +4,18 @@ This widget can be used to view 3d models in .xkt-format.
 
 ## 1. Description
 
-This widget can be used to view 3d models in .xkt-format. It comes bundled with optional component widgets which make this wiget highly customizable and allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring parts. To use this widget you will need to aquire an API-key through ..... or run it locally. The widget can be used in material passports, building guidance applications, product designing applications or used for marketing in architectual applications.
+This widget can be used to view 3d models in .xkt-format. It comes bundled with optional component widgets which make this widget highly customizable. The widget components allows manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring parts. To use this widget in a deployed environment you will need to aquire an API-key through ..... or run it locally. The widget can be used in material passports, building guidance applications, product designing applications or used for marketing in architectual applications.
 
 ### 1.1 Contents
 <table><tbody><tr><td>Widget component</td><td>Description</td></tr>
 <tr><td>
- <a href="https://www.google.com">Viewer container</a></td><td>The container widget where every other widget should be placed within which is mandatory</td></tr>
-<tr><td><a href="https://www.google.com">Viewer</a></td><td>The widget which holds the reference to the object that represents the 3D-model.</td></tr>
+ <a href="12-Browser-example">Viewer container</a></td><td>The container widget where every other widget should be placed within which is mandatory</td></tr>
+<tr><td><a href="12-Browser-example">Viewer</a></td><td>The widget which holds the reference to the object that represents the 3D-model.</td></tr>
 <tr><td><a href="#41-Navigation-Cube">Navigation cube</a></td><td>A navigation cube which can be interacted with by dragging which allows for rotation of the 3D-model and snapping</td></tr>
 <tr><td><a href="#42-Annotations">Annotations</a></td><td>A component widget which allows you to show annotations</td></tr>
 <tr><td><a href="#43-Xray-Objects">Xray Objects</a></td><td>A component widget which allows you to toggle partial visibility of the 3D-model</td></tr>
 <tr><td><a href="#44-Measurement">Measurement</a></td><td>Allows a user to measure dimensions or angles of the 3D-model</td></tr>
-<tr><td>[Camera Navigation](http://www.google.com)</td><td>Allows you to influence how the user interacts with the camera of the viewer.</td></tr>
+<tr><td><a href="#45-Camera-Navigation">Camera Navigation</a></td><td>Allows you to influence how the user interacts with the camera of the viewer.</td></tr>
 <tr><td>[Camera Control](http://www.google.com)</td><td>Allows you to influence camera settings of the viewer.</td></tr>
 <tr><td>[Reset Viewer Button](http://www.google.com)/td><td>Used reset the viewer to how it was initialized on page load</td></tr>
 <tr><td>[Tree View Hierarchy](http://www.google.com)/td><td>Used to display a treeview hierarchy which indicates the treeview order</td></tr>
@@ -74,7 +74,7 @@ A navigation cube which can be interacted with by dragging which allows for rota
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/navigation-cube/navigationcube_modeler_example.png" width="600"/>
 
 #### 4.1.4 Configuration example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/navigation-cube/navigationcube_general_tab" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/navigation-cube/navigationcube_general_tab.png" width="600"/>
 * Place the Navigation Cube inside the Viewer Container
 * You can specify the colors of the cube by using hex codes
 
@@ -91,7 +91,7 @@ The model objects will need an ObjectID
 
 
 #### 4.2.4 Configuration example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/annotations/annotations_general_tab" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/annotations/annotations_general_tab.png" width="600"/>
 
 * Place the Annotations widget inside the Viewer Container
 * Specify the data source that returns the model objects that you want to show in the annotation
@@ -109,18 +109,18 @@ This widget allows you to toggle parts of the 3D-model transparent which allows 
 
 
 #### 4.3.4 Configuration example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xrayobjects/xrayobjects_general_tab" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xrayobjects/xrayobjects_general_tab.png" width="600"/>
 
 * Place the Xray Objects widget inside the Viewer Container
 * Specify wether or not the controls are visible for the user.
 * Specify when objects will be toggled invisible 
 * Xray objects: You can specify a datasource that will recieve the Object from the parent datasource as input parameter and expects a list of Objects as a return. You will have to specify the object ID attribute if you use this.
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xrayobjects/xrayobjects_xraysettings_tab" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xrayobjects/xrayobjects_xraysettings_tab.png" width="600"/>
 
 * This tab specifies how the Xrayed item is rendered in the browser
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xrayobjects/xrayobjects_labels_tab" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xrayobjects/xrayobjects_labels_tab.png" width="600"/>
 
 * This tab allows you to customize the UI component shown to the user
 
@@ -136,14 +136,29 @@ This widget allows you to measure parts of the 3D-model. It allows you to measur
 
 
 #### 4.4.4 Configuration example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/measurement/measurement_general_tab" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/measurement/measurement_general_tab.png" width="600"/>
 
 * Place the Measurement widget inside the Viewer Container
 * Specify wether or not the controls are visible for the user and how it renders for the user.
 * Specify the default measurement mode.
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/measurement/measurement_labels_tab" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/measurement/measurement_labels_tab.png" width="600"/>
 
 * This specifies the labels for the UI component that is shown to the user.
 
+#### 4.5 Camera Navigation
+#### 4.5.1 Description
+Allows you to influence how the user interacts with the camera of the viewer
+#### 4.5.2 Browser example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-navigation/camera_navigation_ui_example.png" width="300"/>
+
+#### 4.5.3 Modeler example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera_navigation/camera_navigation_modeler_example.png" width="600"/>
+
+
+#### 4.5.4 Configuration example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera_navigation/camera_navigation_general_tab.png" width="600"/>
+
+* Allows you to configure the navigation mode of the camera.
+* This specifies how the camera navigation is shown to the user.
 
