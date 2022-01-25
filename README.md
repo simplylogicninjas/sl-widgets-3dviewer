@@ -4,7 +4,7 @@ This widget can be used to view 3d models in .xkt-format.
 
 ## 1. Description
 
-This widget can be used to view 3d models in .xkt-format. It comes bundled with optional component widgets that allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring parts. To use this widget you will need to aquire an API-key through ..... or run it locally.
+This widget can be used to view 3d models in .xkt-format. It comes bundled with optional component widgets that allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring parts. To use this widget you will need to aquire an API-key through ..... or run it locally. The widget can be used in material passports, building guidance applications, product designing applications or used for marketing in architectual applications.
 
 ### 1.1 Contents
 <table><tbody><tr><td>Widget component</td><td>Description</td></tr>
@@ -30,7 +30,7 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 * Place a viewer container in a dataview that contains a 3D-model
 * Add the API-key aquired from .... . If you want to test a 3d model locally you don't need an API-key.
 * Place the viewer widget inside the viewer container.
-* Select an entity that holds the XKT-model file. 
+* Select an entity that holds the XKT-model file (which you provide to the dataview the Viewer Container is nested in). 
 
 ### 2.1 Modeler example
 
@@ -40,9 +40,12 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 ### 2.2 Configuration example
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-viewer/main/docs/viewer-container/images/viewercontainer_general_tab.png" width="600"/>
 
-Configure the API-key, if the API-key field is empty the widget will work locally.
+* Configure the API-key, if the API-key field is empty the widget will only work locally.
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-viewer/main/docs/viewer/images/viewer_general_tab.png" width="600"/>
+* Select the entity that holds the XKT model file
+* You can optionally specify the visible objects.
+
 
 ## 3. Use Cases
 
