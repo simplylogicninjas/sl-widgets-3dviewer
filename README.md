@@ -75,6 +75,7 @@ A navigation cube which can be interacted with by dragging which allows for rota
 
 #### 4.1.4 Configuration example
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/navigation-cube/navigationcube_general_tab.png" width="600"/>
+
 * Place the Navigation Cube inside the Viewer Container
 * You can specify the colors of the cube by using hex codes
 
@@ -101,26 +102,26 @@ The model objects will need an ObjectID
 #### 4.3.1 Description
 This widget allows you to toggle parts of the 3D-model transparent which allows you to see the objects behind.
 #### 4.3.2 Browser example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xrayobjects/xrayobjects_browser_example.png" width="500"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xray-objects/xrayobjects_browser_example.png" width="500"/>
 
 #### 4.3.3 Modeler example
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xrayobjects/xrayobjects_modeler_example.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xray-objects/xrayobjects_modeler_example.png" width="600"/>
 
 
 #### 4.3.4 Configuration example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xrayobjects/xrayobjects_general_tab.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xray-objects/xrayobjects_general_tab.png" width="600"/>
 
 * Place the Xray Objects widget inside the Viewer Container
 * Specify wether or not the controls are visible for the user.
 * Specify when objects will be toggled invisible 
-* Xray objects: You can specify a datasource that will recieve the Object from the parent datasource as input parameter and expects a list of Objects as a return. You will have to specify the object ID attribute if you use this.
+* Xray objects: You can specify a datasource that will recieve the Object from the parent datasource as input parameter and expects a list of Objects as a return. You will have to specify the object ID attribute if you use this. This can be used if you want to X-ray an entire model.
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xrayobjects/xrayobjects_xraysettings_tab.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xray-objects/xrayobjects_xraysettings_tab.png" width="600"/>
 
 * This tab specifies how the Xrayed item is rendered in the browser
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xrayobjects/xrayobjects_labels_tab.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xray-objects/xrayobjects_labels_tab.png" width="600"/>
 
 * This tab allows you to customize the UI component shown to the user
 
@@ -150,14 +151,14 @@ This widget allows you to measure parts of the 3D-model. It allows you to measur
 #### 4.5.1 Description
 Allows you to influence how the user interacts with the camera of the viewer
 #### 4.5.2 Browser example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-navigation/camera_navigation_ui_example.png" width="300"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-navigation/cameranavigation_ui_example.png" width="300"/>
 
 #### 4.5.3 Modeler example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera_navigation/camera_navigation_modeler_example.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera_navigation/cameranavigation_modeler_example.png" width="600"/>
 
 
 #### 4.5.4 Configuration example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera_navigation/camera_navigation_general_tab.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera_navigation/cameranavigation_general_tab.png" width="600"/>
 * Place the Camera Navigation inside the Viewer Container
 * Allows you to configure the navigation mode of the camera.
 * This specifies how the camera navigation is shown to the user.
@@ -166,14 +167,14 @@ Allows you to influence how the user interacts with the camera of the viewer
 #### 4.6.1 Description
 Allows you to save the camera position
 #### 4.6.2 Browser example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-position/camera_position_ui_example.png" width="300"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-position/cameraposition_ui_example.png" width="300"/>
 
 #### 4.6.3 Modeler example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-posistion/camera_position_modeler_example.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-posistion/cameraposition_modeler_example.png" width="600"/>
 
 
 #### 4.6.4 Configuration example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-position/camera_position_general_tab.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-position/cameraposition_general_tab.png" width="600"/>
 
 * Place the Camera Navigation inside the Viewer Container
 * Shows a button which passes the model object to a microflow so you can save the camera position to an object.
@@ -184,7 +185,7 @@ Allows you to save the camera position
 #### 4.7.1 Description
 Used reset the viewer to how it was initialized on page load
 #### 4.7.2 Browser example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/reset-viewer/reset_viewer_ui_example.png" width="300"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/reset-viewer/resetviewer_ui_example.png" width="300"/>
 
 #### 4.7.3 Modeler example
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/reset-viewer/resetviewer_modeler_example.png" width="600"/>
@@ -230,9 +231,9 @@ Used to display a treeview of objects/types/storey's depending on how the Treevi
 * Place the Treeview inside the Viewer Container
 * Customize the behaviour of clicking on an item in the treeview.
 
-#### 4.10 Hightlight Objects
+#### 4.10 Highlight Objects
 #### 4.10.1 Description
-Used to display a treeview of objects/types/storey's depending on how the Treeview Hierarchy is configured. Gives the user an overview of the available objects/types/storey's. Allows you to toggle objects as visible/invisible in the 3D-Model.
+Used to highlight objects in the 3D-model when selecting through hovering/clicking
 #### 4.10.2 Browser example
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/highlight-objects/highlightobjects_ui_example.png" width="300"/>
 
@@ -246,15 +247,15 @@ Used to display a treeview of objects/types/storey's depending on how the Treevi
 * Place the Highlight Objects inside the Viewer Container
 * The controls indicate wether or not the controls are visible to the user and how these are displayed
 * The interactions indicate which highlight mode is seelcted.
-* You can also provide a datasource of model objects to this widget that will be highlighted.
+* You can also provide a datasource of model objects to this widget that will be highlighted, this can be used to highlight a list of items that is currently not in stock for example.
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/highlight-objects/highlightobjects_highlightsettings_tab.png" width="600"/>
 
 * Customize how an object is higlighted
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/highlight-objects/highlightobjects_labels.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/highlight-objects/highlightobjects_labels_tab.png" width="600"/>
 
-* How the labels in the UI are displayed for the user.
+* Customize how the labels in the UI are displayed for the user.
 
 
 
