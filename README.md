@@ -11,16 +11,16 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 <tr><td>
  <a href="12-Browser-example">Viewer container</a></td><td>The container widget where every other widget should be placed within which is mandatory</td></tr>
 <tr><td><a href="12-Browser-example">Viewer</a></td><td>The widget which holds the reference to the object that represents the 3D-model.</td></tr>
-<tr><td><a href="#41-Navigation-Cube">Navigation cube</a></td><td>A navigation cube which can be interacted with by dragging which allows for rotation of the 3D-model and snapping</td></tr>
-<tr><td><a href="#42-Annotations">Annotations</a></td><td>A component widget which allows you to show annotations</td></tr>
-<tr><td><a href="#43-Xray-Objects">Xray Objects</a></td><td>A component widget which allows you to toggle partial visibility of the 3D-model</td></tr>
-<tr><td><a href="#44-Measurement">Measurement</a></td><td>Allows a user to measure dimensions or angles of the 3D-model</td></tr>
-<tr><td><a href="#45-Camera-Navigation">Camera Navigation</a></td><td>Allows you to customize how the user interacts with the camera of the viewer.</td></tr>
-<tr><td><a href="#46-Camera-Control">Camera Control</a></td><td>Allows you to customize camera settings of the viewer.</td></tr>
-<tr><td><a href="#47-Reset-Viewer">Reset Viewer</a></td><td>Used reset the viewer to how it was initialized on page load</td></tr>
-<tr><td><a href="#48-Treeview-Hierarchy">Treeview Hierarchy</a></td><td>Used to display a treeview hierarchy which indicates the treeview order</td></tr>
-<tr><td><a href="#49-Treeview">Treeview</a><td>Used to display elements from the 3D-model in a treeview and toggle visibility</td></tr>
-<tr><td><a href="#410-Highlight-Objects">Highlight Objects</a></td><td>Used to highlight objects in the 3D-model when selecting through hovering/clicking</td></tr>
+<tr><td><a href="#41-Navigation-Cube">4.1 Navigation cube</a></td><td>A navigation cube which can be interacted with by dragging which allows for rotation of the 3D-model and snapping</td></tr>
+<tr><td><a href="#42-Annotations">4.2 Annotations</a></td><td>A component widget which allows you to show annotations</td></tr>
+<tr><td><a href="#43-Xray-Objects">4.3 Xray Objects</a></td><td>A component widget which allows you to toggle partial visibility of the 3D-model</td></tr>
+<tr><td><a href="#44-Measurement">4.4 Measurement</a></td><td>Allows a user to measure dimensions or angles of the 3D-model</td></tr>
+<tr><td><a href="#45-Camera-Navigation">4.5 Camera Navigation</a></td><td>Allows you to customize how the user interacts with the camera of the viewer.</td></tr>
+<tr><td><a href="#46-Camera-Control">4.6 Camera Control</a></td><td>Allows you to customize camera settings of the viewer.</td></tr>
+<tr><td><a href="#47-Reset-Viewer">4.7 Reset Viewer</a></td><td>Used reset the viewer to how it was initialized on page load</td></tr>
+<tr><td><a href="#48-Treeview-Hierarchy">4.8 Treeview Hierarchy</a></td><td>Used to display a treeview hierarchy which indicates the treeview order</td></tr>
+<tr><td><a href="#49-Treeview">4.9 Treeview</a><td>Used to display elements from the 3D-model in a treeview and toggle visibility</td></tr>
+<tr><td><a href="#410-Highlight-Objects">4.10 Highlight Objects</a></td><td>Used to highlight objects in the 3D-model when selecting through hovering/clicking</td></tr>
 </tbody></table>
 
 ### 1.2 Browser example
