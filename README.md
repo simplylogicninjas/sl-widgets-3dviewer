@@ -16,11 +16,11 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 <tr><td><a href="#43-Xray-Objects">Xray Objects</a></td><td>A component widget which allows you to toggle partial visibility of the 3D-model</td></tr>
 <tr><td><a href="#44-Measurement">Measurement</a></td><td>Allows a user to measure dimensions or angles of the 3D-model</td></tr>
 <tr><td><a href="#45-Camera-Navigation">Camera Navigation</a></td><td>Allows you to influence how the user interacts with the camera of the viewer.</td></tr>
-<tr><td>[Camera Control](http://www.google.com)</td><td>Allows you to influence camera settings of the viewer.</td></tr>
-<tr><td>[Reset Viewer Button](http://www.google.com)/td><td>Used reset the viewer to how it was initialized on page load</td></tr>
-<tr><td>[Tree View Hierarchy](http://www.google.com)/td><td>Used to display a treeview hierarchy which indicates the treeview order</td></tr>
-<tr><td>[Tree view](http://www.google.com)/td><td>Used to display elements from the 3D-model in a treeview and toggle visibility</td></tr>
-<tr><td>[Highlight Objects](http://www.google.com)/td><td>Used to display elements from the 3D-model in a treeview and toggle visibility</td></tr>
+<tr><td><a href="#46-Camera-Control">Camera Control</a></td><td>Allows you to influence camera settings of the viewer.</td></tr>
+<tr><td><a href="#47-Reset-Viewer">Reset Viewer</a></td><td>Used reset the viewer to how it was initialized on page load</td></tr>
+<tr><td><a href="#48-Treeview-Hierarchy">Treeview Hierarchy</a></td><td>Used to display a treeview hierarchy which indicates the treeview order</td></tr>
+<tr><td><a href="#49-Treeview">Treeview</a><td>Used to display elements from the 3D-model in a treeview and toggle visibility</td></tr>
+<tr><td><a href="#410-Highlight-Objects">Highlight Objects</a></td><td>Used to highlight objects in the 3D-model when selecting through hovering/clicking</td></tr>
 </tbody></table>
 
 ### 1.2 Browser example
@@ -158,7 +158,105 @@ Allows you to influence how the user interacts with the camera of the viewer
 
 #### 4.5.4 Configuration example
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera_navigation/camera_navigation_general_tab.png" width="600"/>
-
+* Place the Camera Navigation inside the Viewer Container
 * Allows you to configure the navigation mode of the camera.
 * This specifies how the camera navigation is shown to the user.
+
+#### 4.6 Camera Position
+#### 4.6.1 Description
+Allows you to save the camera position
+#### 4.6.2 Browser example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-position/camera_position_ui_example.png" width="300"/>
+
+#### 4.6.3 Modeler example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-posistion/camera_position_modeler_example.png" width="600"/>
+
+
+#### 4.6.4 Configuration example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/camera-position/camera_position_general_tab.png" width="600"/>
+
+* Place the Camera Navigation inside the Viewer Container
+* Shows a button which passes the model object to a microflow so you can save the camera position to an object.
+* Read the positions from the strings provided
+- position is a string formatted as: ```int;int;int ```
+
+#### 4.7 Reset Viewer
+#### 4.7.1 Description
+Used reset the viewer to how it was initialized on page load
+#### 4.7.2 Browser example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/reset-viewer/reset_viewer_ui_example.png" width="300"/>
+
+#### 4.7.3 Modeler example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/reset-viewer/resetviewer_modeler_example.png" width="600"/>
+
+
+#### 4.7.4 Configuration example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/reset-viewer/resetviewer_general_tab.png" width="600"/>
+* Place the Reset Viewer inside the Viewer Container
+* Customize the label according to your preferences
+
+#### 4.8 Treeview Hierarchy
+#### 4.8.1 Description
+Used to display a treeview hierarchy which indicates how the treeview component is displayed
+#### 4.8.2 Browser example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/treeview-hierarchy/treeview_hierarchy_ui_example.png" width="300"/>
+
+#### 4.8.3 Modeler example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/treeview-hierarchy/treeview_hierarchy_modeler_example.png" width="600"/>
+
+
+#### 4.8.4 Configuration example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/treeview-hierarchy/treeview_hierarchy_general_tab.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/treeview-hierarchy/treeview_hierarchy_labels_tab.png" width="600"/>
+
+* Place the Treeview Hierarchy inside the Viewer Container
+* Place the Treeview inside the Viewer Container
+* Customize how the treeview hierarchy is viewed and what the default display mode for the treeview will be.
+
+#### 4.9 Treeview
+#### 4.9.1 Description
+Used to display a treeview of objects/types/storey's depending on how the Treeview Hierarchy is configured. Gives the user an overview of the available objects/types/storey's. Allows you to toggle objects as visible/invisible in the 3D-Model.
+#### 4.9.2 Browser example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/treeview/treeview_ui_example.png" width="300"/>
+
+#### 4.9.3 Modeler example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/treeview/treeview_modeler_example.png" width="600"/>
+
+
+#### 4.9.4 Configuration example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/treeview/treeview_general_tab.png" width="600"/>
+
+* Place the Treeview Hierarchy inside the Viewer Container
+* Place the Treeview inside the Viewer Container
+* Customize the behaviour of clicking on an item in the treeview.
+
+#### 4.10 Hightlight Objects
+#### 4.10.1 Description
+Used to display a treeview of objects/types/storey's depending on how the Treeview Hierarchy is configured. Gives the user an overview of the available objects/types/storey's. Allows you to toggle objects as visible/invisible in the 3D-Model.
+#### 4.10.2 Browser example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/highlight-objects/highlightobjects_ui_example.png" width="300"/>
+
+#### 4.10.3 Modeler example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/highlight-objects/highlightobjects_modeler_example.png" width="600"/>
+
+
+#### 4.10.4 Configuration example
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/highlight-objects/highlightobjects_general_tab.png" width="600"/>
+
+* Place the Highlight Objects inside the Viewer Container
+* The controls indicate wether or not the controls are visible to the user and how these are displayed
+* The interactions indicate which highlight mode is seelcted.
+* You can also provide a datasource of model objects to this widget that will be highlighted.
+
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/highlight-objects/highlightobjects_highlightsettings_tab.png" width="600"/>
+
+* Customize how an object is higlighted
+
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/highlight-objects/highlightobjects_labels.png" width="600"/>
+
+* How the labels in the UI are displayed for the user.
+
+
+
+
 
