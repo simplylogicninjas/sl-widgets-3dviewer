@@ -10,8 +10,8 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 <table><tbody><tr><td>Widget component</td><td>Description</td></tr>
 <tr><td>
  <a href="https://www.google.com">Viewer container</a></td><td>The container widget where every other widget should be placed within which is mandatory</td></tr>
-<tr><td>[Viewer](http://www.google.com)</td><td>The widget which holds the reference to the object that represents the 3D-model.</td></tr>
-<tr><td>[Navigation Cube](http://www.google.com)</td><td>A navigation cube which can be interacted with by dragging which allows for rotation of the 3D-model and snapping</td></tr>
+<tr><td><a href="https://www.google.com">Viewer</a></td><td>The widget which holds the reference to the object that represents the 3D-model.</td></tr>
+<tr><td><a href="#41NavigationCube">Navigation cube</a></td><td>A navigation cube which can be interacted with by dragging which allows for rotation of the 3D-model and snapping</td></tr>
 <tr><td>[Annotation Widget](http://www.google.com)</td><td>A widget which allows you to show annotations</td></tr>
 <tr><td>[Xray Widget](http://www.google.com)</td><td>A widget which allows you to toggle partial visibility of the 3D-model</td></tr>
 <tr><td>[Measurement](http://www.google.com)</td><td>Allows a user to measure dimensions or angles of the 3D-model</td></tr>
@@ -35,18 +35,23 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 
 ### 2.1 Modeler example
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/viewer/images/viewer_modeler_example.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_modeler_example.png" width="600"/>
 
 
 ### 2.2 Configuration example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/viewer-container/images/viewercontainer_general_tab.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer-container/viewercontainer_general_tab.png" width="600"/>
 
 * Configure the API-key, if the API-key field is empty the widget will only work locally.
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/viewer/images/viewer_general_tab.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_general_tab.png" width="600"/>
+
 * Select the entity that holds the XKT model file
 * You can optionally specify the visible objects.
 
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_events_tab.png" width="600"/>
+
+* You can assign an action to a user action when a user selects an object
+* You can assign a Mendix-action when the page is finished loading the model.
 
 ## 3. Use Cases
 
@@ -59,8 +64,9 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 ## 4. Widget Components
 All widget components are optional but require the viewer container widget and the viewer widget to work.
 ### 4.1 Navigation Cube
+The nav
 #### 4.1.1 Description
-A navigation cube which can be interacted with by dragging which allows for rotation of the 3D-model and snapping
+A navigation cube which can be interacted with by dragging which allows for rotation of the 3D-model and snapping,
 #### 4.1.2 Modeler example
 #### 4.1.3 Configuration example
 #### 4.1.4 Use cases
