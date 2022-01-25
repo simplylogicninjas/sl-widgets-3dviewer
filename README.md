@@ -35,15 +35,15 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 
 ### 2.1 Modeler example
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-viewer/main/docs/viewer/images/viewer_modeler_example.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/viewer/images/viewer_modeler_example.png" width="600"/>
 
 
 ### 2.2 Configuration example
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-viewer/main/docs/viewer-container/images/viewercontainer_general_tab.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/viewer-container/images/viewercontainer_general_tab.png" width="600"/>
 
 * Configure the API-key, if the API-key field is empty the widget will only work locally.
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-viewer/main/docs/viewer/images/viewer_general_tab.png" width="600"/>
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/viewer/images/viewer_general_tab.png" width="600"/>
 * Select the entity that holds the XKT model file
 * You can optionally specify the visible objects.
 
