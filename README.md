@@ -28,7 +28,7 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 
 ## 2. Usage
 
-* Place a viewer container in a dataview that contains a 3D-model
+* Place a viewer container in a dataview that contains a 3D-model with an .xkt extension.
 * Add the API-key aquired from .... . If you want to test a 3d model locally you don't need an API-key.
 * Place the viewer widget inside the viewer container.
 * Select an entity that holds the XKT-model file (which you provide to the dataview the Viewer Container is nested in). 
