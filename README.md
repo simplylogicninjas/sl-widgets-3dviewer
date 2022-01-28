@@ -1,10 +1,10 @@
 # SL 3D-Viewer
 
-This widget can be used to view 3d models in .xkt-format.
+This widget can be used to view 3d models and use these models in your organisational processes.
 
 ## 1. Description
 
-This widget can be used to view 3d models in .xkt-format. It comes bundled with optional component widgets which make this widget highly customizable. The widget components allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring parts. To use this widget in a deployed environment you will need to aquire an API-key through ..... or run it locally. The widget can be used in material passports, building guidance applications, product designing applications or used for marketing in architectual applications.
+This widget can be used to view 3d models in .xkt-format. This 3d-modeler is a complete Mendix-solution. It comes bundled with optional component widgets which make this widget highly customizable. The widget components allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring parts. To use this widget in a deployed environment you will need to aquire an API-key through ..... or run it locally. The widget can be used to facilitate processes that deal with products and buildings.
 
 ### 1.1 Contents
 <table><tbody><tr><td><b>Widget component</b></td><td>Description</td></tr>
@@ -55,19 +55,17 @@ This widget can be used to view 3d models in .xkt-format. It comes bundled with 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_event_tab.png" width="600"/>
 
 * You can assign a Mendix-action when a user selects an object inside of the model.
-* You can specify which attribute will hold the meta data in JSON-format.
+* You can specify from which string in JSON-format the model objects is constructed from.
 * You can assign a Mendix-action when the page is finished loading the model.
 
 ## 3. Use Cases
 
-* Material passports
-* Product design
-* Construction guidance
-* Inspection and planning applications
-* Marketing in architectual applications
+* Make product design processes insightfull to non-technical employees.
+* Check on the availability of a part from a model and manage your supply.
+* Usage in inspection apps to manage the status of an asset or object.
 
 ## 4. Widget Components
-All widget components are optional but require the viewer container widget and the viewer widget to work.
+All widget components are optional but require the viewer container widget and the viewer widget to be functional
 ### 4.1 Navigation Cube
 #### 4.1.1 Description
 A navigation cube which can be interacted with by dragging which allows for rotation of the 3D-model. You can also click one of the sides/edges to snap to that side of the 3D-model.
