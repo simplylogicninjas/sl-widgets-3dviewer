@@ -4,7 +4,7 @@ This widget can be used to view 3d models and use these models in your organisat
 
 ## 1. Description
 
-This widget can be used to view 3d models in .xkt-format. This 3d-modeler is a complete Mendix-solution. It comes bundled with optional component widgets which make this widget highly customizable. The widget components allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring parts. To use this widget in a deployed environment you will need to aquire an API-key through ..... or run it locally. The widget can be used to facilitate processes that deal with products and buildings.
+This widget can be used to view 3d models. The widget natively supports ``.xkt`` format. If you wan to view formats such as ``ifc`` you can convert this file with our converter service located at ....... The widget comes bundled with optional component widgets which make this widget highly customizable. The widget components allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring model-objects. To use this widget in a deployed environment you will need to aquire an API-key through ..... or run it locally. The widget can be used to facilitate processes that deal with products and buildings.
 
 ### 1.1 Contents
 <table><tbody><tr><td><b>Widget component</b></td><td>Description</td></tr>
@@ -39,24 +39,26 @@ This widget can be used to view 3d models in .xkt-format. This 3d-modeler is a c
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_modeler_example.png" width="600"/>
 
 * The viewer needs to be nested inside the viewer container.
-* The viewer requires a dataview object from the pagecontext.
+* The viewer requires a dataview object.
 
 
 ### 2.2 Configuration example
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer-container/viewercontainer_general_tab.png" width="600"/>
 
-* Configure the API-key, if the API-key field is empty the widget will only work locally.
+* Configure the API-key, if you want to test the widget locally provide a any string.
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_general_tab.png" width="600"/>
 
 * Select the entity that holds the XKT model file
-* You can optionally specify the visible objects. This can be used if you only want to show a part of a 3D-model.
+* You can optionally specify the visible objects. This can be used if you only want to show a part of a 3D-model. If you use this you will have to specify a reference to an attribute that stores the object model-id.
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_event_tab.png" width="600"/>
 
 * You can assign a Mendix-action when a user selects an object inside of the model.
 * You can specify from which string in JSON-format the model objects is constructed from.
-* You can assign a Mendix-action when the page is finished loading the model.
+* You can assign a Mendix-action when model is loaded. Normally this will be a microflow where you import your model objects from the string with for example an import mapping shown below.
+
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/import_mapping.png" width="600"/>
 
 ## 3. Use Cases
 
