@@ -6,7 +6,7 @@ This widget can be used to view 3d models and use these models in your organisat
 
 This widget can be used to view 3d models. The widget natively supports ``.xkt`` format. If you wan to view formats such as ``ifc`` you can convert this file with our converter service located at ....... The widget comes bundled with optional component widgets which make this widget highly customizable. The widget components allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring model-objects. To use this widget in a deployed environment you will need to aquire an API-key through ..... or run it locally. The widget can be used to facilitate processes that deal with products and buildings.
 
-For an example login in our  <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io/">Demo app</a> with Username:``User`` and Password: ``Simplylogic``
+For an example login in our <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io/">Demo app</a> with Username:``User`` and Password: ``Simplylogic``
 
 ### 1.1 Contents
 
@@ -79,13 +79,13 @@ A navigation cube which can be interacted with by dragging which allows for rota
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/navigation-cube/navigationcube_general_tab.png" width="600">
 
 * Place the Navigation Cube inside the Viewer Container
-* You can specify the colors of the cube by using hexadecimal colornotation.
+* You can specify the colors of the cube by using hexadecimal color notation.
 
 ### 4.2 Annotations
 
 #### 4.2.1 Description
 
-A widget which allows you to show annotations or markers on a model. To accopmlish this you will need a list of model objects.
+A widget which allows you to show annotations on objects of a model. To accopmlish this you will need a list of model objects.
 The model objects will need an ObjectID
 
 #### 4.2.2 Browser example
@@ -102,6 +102,7 @@ The model objects will need an ObjectID
 
 * Place the Annotations widget inside the Viewer Container
 * Specify the data source that returns the model objects that you want to show in the annotation
+* The container will receive the context of the model-object.
 * You can specify when the label is shown.
 
 ### 4.3 Xray-Objects
@@ -124,7 +125,7 @@ This widget allows you to toggle parts of the 3D-model transparent which allows 
 
 * Place the Xray Objects widget inside the Viewer Container
 * Specify wether or not the controls are visible for the user.
-* Specify when objects will be toggled invisible
+* Specify when objects will be displayed x-rayed.
 * Xray objects: You can specify a datasource that will recieve the Object from the parent datasource as input parameter and expects a list of Objects as a return. You will have to specify the object ID attribute if you use this. This can be used if you want to X-ray an entire model.
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xray-objects/xrayobjects_xraysettings_tab.png" width="600">
@@ -133,7 +134,7 @@ This widget allows you to toggle parts of the 3D-model transparent which allows 
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xray-objects/xrayobjects_labels_tab.png" width="600">
 
-* This tab allows you to customize the UI component shown to the user
+* This tab allows you to customize the UI component shown to the user, here you can translate the labels into a language of your liking.
 
 ### 4.4 Measurement
 
@@ -204,14 +205,13 @@ Allows you to save the camera position
 * Place the Camera Navigation inside the Viewer Container
 * Shows a button which passes the model object to a microflow so you can save the camera position to an object.
 * Read the positions from the strings provided
-
 * position is a string formatted as: ```int;int;int```
 
 ### 4.7 Reset Viewer
 
 #### 4.7.1 Description
 
-Used reset the viewer to how it was initialized on page load
+Used reset the viewer to how it was initialized on page load, including highlighted items, x-rayed items, measurements and the camera position.
 
 #### 4.7.2 Browser example
 
@@ -223,8 +223,10 @@ Used reset the viewer to how it was initialized on page load
 
 #### 4.7.4 Configuration example
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/reset-viewer/resetviewer_general_tab.png" width="600"> \* Place the Reset Viewer inside the Viewer Container
-\* Customize the label according to your preferences
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/reset-viewer/resetviewer_general_tab.png" width="600"> \
+
+* Place the Reset Viewer inside the Viewer Container
+* Customize the label according to your preferences
 
 ### 4.8 Treeview Hierarchy
 
@@ -247,6 +249,9 @@ Used to display a treeview hierarchy which indicates how the treeview component 
 * Place the Treeview Hierarchy inside the Viewer Container
 * Place the Treeview inside the Viewer Container
 * Customize how the treeview hierarchy is viewed and what the default display mode for the treeview will be.
+    * Objects means that the treenodes are organized based on the object they are contained in.
+    * Types means that the treenodes are organized based on object-type (this is usefull for models converted from .ifc)
+    * Storeys means that the treenodes are organized based on the storeys and then on type.
 
 ### 4.9 Treeview
 
@@ -264,11 +269,9 @@ Used to display a treeview of objects/types/storey's depending on how the Treevi
 
 #### 4.9.4 Configuration example
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/treeview/treeview_general_tab.png" width="600">
-
 * Place the Treeview Hierarchy inside the Viewer Container
 * Place the Treeview inside the Viewer Container
-* Customize the behaviour of clicking on an item in the treeview.
+
 
 ### 4.10 Highlight Objects
 
@@ -290,8 +293,8 @@ Used to highlight objects in the 3D-model when selecting through hovering/clicki
 
 * Place the Highlight Objects inside the Viewer Container
 * The controls indicate wether or not the controls are visible to the user and how these are displayed
-* The interactions indicate which highlight mode is seelcted.
-* You can also provide a datasource of model objects to this widget that will be highlighted, this can be used to highlight a list of items that is currently not in stock for example.
+* The interactions indicate which highlight mode is selected.
+* You can also provide a datasource of model objects to this widget that will be highlighted, this can be used to highlight a list of items.
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/highlight-objects/highlightobjects_highlightsettings_tab.png" width="600">
 
