@@ -312,7 +312,8 @@ Used to explode the model to interact with inner model-objects.
 
 #### 4.11.2 Browser example
 
-<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/explode/explode.gif" width="300">
+<img src="https://github.com/simplylogicninjas/sl-widgets-3dviewer/blob/main/docs/images/explode/Explode.gif" width="300">
+
 
 #### 4.11.3 Modeler example
 
