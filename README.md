@@ -304,7 +304,7 @@ Used to highlight objects in the 3D-model when selecting through hovering/clicki
 
 * Customize how the labels in the UI are displayed for the user.
 
-### 4.11 Highlight Objects
+### 4.11 Explode
 
 #### 4.11.1 Description
 
