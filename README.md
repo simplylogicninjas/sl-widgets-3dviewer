@@ -4,7 +4,7 @@ This widget can be used to view 3d models and use these models in your organisat
 
 ## 1\. Description
 
-This widget can be used to view 3d models. The widget natively supports ``.xkt`` format. If you wan to view formats such as ``ifc`` you can convert this file with our converter service located at ....... The widget comes bundled with optional component widgets which make this widget highly customizable. The widget components allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring model-objects. To use this widget in a deployed environment you will need to aquire an API-key through ..... or run it locally. The widget can be used to facilitate processes that deal with products and buildings.
+This widget can be used to view 3d models. The widget natively supports ``.xkt`` format. If you wan to view formats such as ``ifc`` you can convert this file with our converter service located at ....... The widget comes bundled with optional component widgets which make this widget highly customizable. The widget components allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring model-objects. To use this widget in a deployed environment you will need to aquire an licence key through ..... or run it locally. The widget can be integrated in apps to facilitate processes that deal with products and buildings.
 
 For an example login in our <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io/">Demo app</a> with Username:``User`` and Password: ``Simplylogic``
 
@@ -19,7 +19,7 @@ For an example login in our <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io
 ## 2\. Usage
 
 * Place a viewer container in a dataview that contains a 3D-model with an .xkt extension.
-* Add the API-key aquired from .... . If you want to test a 3d model locally you don't need an API-key.
+* Add the licence key acquired from .... . If you want to test a 3d model locally you don't need an licence key but this value needs to be filled.
 * Place the viewer widget inside the viewer container.
 * Select an entity that holds the XKT-model file (which you provide to the dataview the Viewer Container is nested in).
 * Add any widget component to the viewer container to customize to your likings.
@@ -35,7 +35,7 @@ For an example login in our <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer-container/viewercontainer_general_tab.png" width="600">
 
-* Configure the API-key, if you want to test the widget locally provide a any string.
+* Configure the licence key, if you want to test the widget locally provide a any string.
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_general_tab.png" width="600">
 
@@ -101,7 +101,7 @@ The model objects will need an ObjectID
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/annotations/annotations_general_tab.png" width="600">
 
 * Place the Annotations widget inside the Viewer Container
-* Specify the data source that returns the model objects that you want to show in the annotation
+* Specify the datasource that returns the model objects that you want to show in the annotation
 * The container will receive the context of the model-object.
 * You can specify when the label is shown.
 
@@ -124,7 +124,7 @@ This widget allows you to toggle parts of the 3D-model transparent which allows 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/xray-objects/xrayobjects_general_tab.png" width="600">
 
 * Place the Xray Objects widget inside the Viewer Container
-* Specify wether or not the controls are visible for the user.
+* Specify whether or not the controls are visible for the user.
 * Specify when objects will be displayed x-rayed.
 * Xray objects: You can specify a datasource that will recieve the Object from the parent datasource as input parameter and expects a list of Objects as a return. You will have to specify the object ID attribute if you use this. This can be used if you want to X-ray an entire model.
 
@@ -155,7 +155,7 @@ This widget allows you to measure parts of the 3D-model. It allows you to measur
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/measurement/measurement_general_tab.png" width="600">
 
 * Place the Measurement widget inside the Viewer Container
-* Specify wether or not the controls are visible for the user and how it renders for the user.
+* Specify whether or not the controls are visible for the user and how it renders for the user.
 * Specify the default measurement mode.
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/measurement/measurement_labels_tab.png" width="600">
@@ -292,7 +292,7 @@ Used to highlight objects in the 3D-model when selecting through hovering/clicki
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/highlight-objects/highlightobjects_general_tab.png" width="600">
 
 * Place the Highlight Objects inside the Viewer Container
-* The controls indicate wether or not the controls are visible to the user and how these are displayed
+* The controls indicate whether or not the controls are visible to the user and how these are displayed
 * The interactions indicate which highlight mode is selected.
 * You can also provide a datasource of model objects to this widget that will be highlighted, this can be used to highlight a list of items.
 
