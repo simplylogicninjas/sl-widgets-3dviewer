@@ -6,7 +6,7 @@ This widget can be used to view 3d models and use these models in your organisat
 
 This widget can be used to view 3d models. The widget natively supports ``.xkt`` format. If you wan to view formats such as ``ifc`` you can convert this file with our converter service located at ....... The widget comes bundled with optional component widgets which make this widget highly customizable. The widget components allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring model-objects. To use this widget in a deployed environment you will need to aquire an licence key through ..... or run it locally. The widget can be integrated in apps to facilitate processes that deal with products and buildings.
 
-For an example login in our <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io/">Demo app</a> with Username:``User`` and Password: ``Simplylogic``
+For an example login in our <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io/">Demo app</a> with Username:``WidgetUser`` and Password: ``Simplylogic``
 
 ### 1.1 Contents
 
@@ -35,7 +35,7 @@ For an example login in our <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer-container/viewercontainer_general_tab.png" width="600">
 
-* Configure the licence key, if you want to test the widget locally provide a any string.
+* Configure the licence key, if you want to test the widget locally provide any string.
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_general_tab.png" width="600">
 
@@ -249,15 +249,15 @@ Used to display a treeview hierarchy which indicates how the treeview component 
 * Place the Treeview Hierarchy inside the Viewer Container
 * Place the Treeview inside the Viewer Container
 * Customize how the treeview hierarchy is viewed and what the default display mode for the treeview will be.
-    * Objects means that the treenodes are organized based on the object they are contained in.
+    * Containement means that the treenodes are organized based on the object they are contained in.
     * Types means that the treenodes are organized based on object-type (this is usefull for models converted from .ifc)
-    * Storeys means that the treenodes are organized based on the storeys and then on type.
+    * Storeys means that the treenodes are organized based on the storeys and then on type. Usefull for multi-storey buildings
 
 ### 4.9 Treeview
 
 #### 4.9.1 Description
 
-Used to display a treeview of objects/types/storey's depending on how the Treeview Hierarchy is configured. Gives the user an overview of the available objects/types/storey's. Allows you to toggle objects as visible/invisible in the 3D-Model.
+Used to display a treeview of containment/types/storey's depending on how the Treeview Hierarchy is configured. Gives the user an overview of the available containment/types/storey's. Allows you to toggle objects as visible/invisible in the 3D-Model.
 
 #### 4.9.2 Browser example
 
@@ -320,3 +320,10 @@ Used to explode the model to interact with inner model-objects.
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/explode/explode_modeler_example.png" width="600">
 
 * Place the Explode widget inside the Viewer Container
+
+#### 4.11.4 Modeler configuration
+
+<img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/explode/explode_general_tab.png" width="600">
+
+* Controls visible: Configure whether the controls are visible for the user.
+* Initial explode: allows you to set an initial explode value for the viewer objects.
