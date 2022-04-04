@@ -22,7 +22,7 @@ For examples, navigate to the <a href="https://sl3dviewerdemoapp-sandbox.mxapps.
 ## 2\. Usage
 
 * Place a viewer container in a dataview that contains a 3D-model with an .xkt extension.
-* Add the licence key acquired from .... . If you want to test a 3d model locally you don't need an licence key but this value needs to be filled.
+* If you want to use the 3d viewer locally you don't need an licence key. For running under a Mendix licensed application. You will need to subscribe at the Mendix marketplace to obtain a license key.
 * Place the viewer widget inside the viewer container.
 * Select an entity that holds the XKT-model file (which you provide to the dataview the Viewer Container is nested in).
 * Add any widget component to the viewer container to customize to your likings.
