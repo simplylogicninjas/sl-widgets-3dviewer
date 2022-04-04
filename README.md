@@ -23,10 +23,10 @@ The widgets are based on the opensource library from Xeokit, which is licensed u
             <td><b>Widget</b></td><td>Description</td>
         </tr>
         <tr>
-            <td><a href="12-Browser-example">Viewer container</a></td><td>The container widget where every other widget should be placed within which is mandatory</td>
+            <td><a href="#2-Usage">Viewer container</a></td><td>The container widget where every other widget should be placed within which is mandatory</td>
         </tr>
         <tr>
-            <td><a href="12-Browser-example">Viewer</a></td><td>The widget which holds the reference to the object that represents the 3D-model.</td>
+            <td><a href="#2-Usage">Viewer</a></td><td>The widget which holds the reference to the object that represents the 3D-model.</td>
         </tr>
         <tr>
             <td><a href="#41-Highlight-Objects">Highlight Objects</a></td><td>Used to highlight objects in the 3D-model when selecting through hovering/clicking</td>
