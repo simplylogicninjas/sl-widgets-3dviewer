@@ -4,12 +4,14 @@
 
 Collection of Mendix widgets that allows to show any IFC or GLTF models. Combine the widgets with Mendix business logic to create various applications, for example maintenance or building information systems.
 
-To load a IFC or GLTF model file. It has to be converted to a optimalized format that can load quickly within the browser. Converting can be done easily with our <a href="https://3dconverterservice.simplylogic.nl">converter service</a>.
+To load a IFC or GLTF model file. It has to be converted to a optimalized format that can load quickly within the browser. Converting can be done easily through our <a href="https://3dconverterservice.simplylogic.nl">converter service</a>. For more information about the converter service, check out the documentation <a href="https://3dconverterservice.simplylogic.nl">here</a>.
 
 For examples, navigate to the <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io/">Demo application</a>. Login with:
 
 - Username: ``WidgetUser``
 - Password: ``Simplylogic``
+
+The widgets are based on the opensource library from Xeokit, which is licensed under the <a href="https://github.com/xeokit/xeokit-sdk/blob/master/LICENSE.txt">Affero GPL V3</a> license.
 
 ### 1.1 Contents
 
@@ -24,7 +26,7 @@ For examples, navigate to the <a href="https://sl3dviewerdemoapp-sandbox.mxapps.
 * Place a viewer container in a dataview that contains a 3D-model with an .xkt extension.
 * If you want to use the 3d viewer locally you don't need an licence key. For running under a Mendix licensed application. You will need to subscribe at the Mendix marketplace to obtain a license key.
 * Place the viewer widget inside the viewer container.
-* Select an entity that holds the XKT-model file (which you provide to the dataview the Viewer Container is nested in).
+* Select an entity that holds the model file (which you provide to the dataview the Viewer Container is nested in).
 * Add any widget component to the viewer container to customize to your likings.
 
 ### 2.1 Modeler example
@@ -42,7 +44,7 @@ For examples, navigate to the <a href="https://sl3dviewerdemoapp-sandbox.mxapps.
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_general_tab.png" width="600">
 
-* Select the entity that holds the XKT model file
+* Select the entity that holds the model file
 * You can optionally specify the visible objects. This can be used if you only want to show a part of a 3D-model. If you use this you will have to specify a reference to an attribute that stores the object model-id.
 
 <img src="https://raw.githubusercontent.com/simplylogicninjas/sl-widgets-3dviewer/main/docs/images/viewer/viewer_event_tab.png" width="600">
