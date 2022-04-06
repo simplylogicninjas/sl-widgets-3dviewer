@@ -6,7 +6,7 @@ This widget can be used to view 3d models and use these models in your organisat
 
 This widget can be used to view 3d models. The widget natively supports ``.xkt`` format. If you wan to view formats such as ``ifc`` you can convert this file with our converter service located at ....... The widget comes bundled with optional component widgets which make this widget highly customizable. The widget components allow manipulation of the view such as showing annotations, navigation of the camera, highlighting parts of the 3D-model, measuring model-objects. To use this widget in a deployed environment you will need to aquire an licence key through ..... or run it locally. The widget can be integrated in apps to facilitate processes that deal with products and buildings.
 
-For an example login in our <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io/">Demo app</a> with Username:``WidgetUser`` and Password: ``Simplylogic``
+For an example login in our <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io/">Demo app</a> with Username:``WidgetDemo`` and Password: ``Simplylogic.2022``
 
 ### 1.1 Contents
 
