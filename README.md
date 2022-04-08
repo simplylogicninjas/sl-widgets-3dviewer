@@ -6,7 +6,7 @@ Collection of Mendix widgets that allows to show any IFC or GLTF models. Combine
 
 To load a IFC or GLTF model file. It has to be converted to a optimalized format that can load quickly within the browser. Converting can be done easily through our <a href="https://3dconverterservice.simplylogic.nl">converter service</a>. For more information about the converter service, check out the documentation <a href="https://3dconverterservice.simplylogic.nl">here</a>.
 
-For examples, navigate to the <a href="https://sl3dviewerdemoapp-sandbox.mxapps.io/">Demo application</a>. Login with:
+For examples, navigate to the <a href="https://3dviewershowcase-sandbox.mxapps.io/">Demo application</a>. Login with:
 
 - Username: ``WidgetUser``
 - Password: ``Simplylogic.2022``
